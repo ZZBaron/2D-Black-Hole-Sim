@@ -1,7 +1,10 @@
 import numpy as np
+import matplotlib
+matplotlib.use('TkAgg')
 import matplotlib.pyplot as plt
 from matplotlib.animation import FuncAnimation
 from scipy.integrate import solve_ivp
+
 
 
 class BlackHoleSimulation:
@@ -161,4 +164,5 @@ class BlackHoleAnimation:
 if __name__ == "__main__":
     bh_anim = BlackHoleAnimation()
     anim = bh_anim.create_animation()
+    # anim.save('black_hole_light_rays.gif', fps=30, dpi=200, writer='pillow')
     plt.show()
