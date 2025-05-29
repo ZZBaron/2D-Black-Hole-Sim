@@ -2,7 +2,7 @@
 
 This Python simulation visualizes the behavior of light rays around a black hole in 2D space using the Schwarzschild metric. The user can observe gravitational lensing effects in response to a strong gravitational field.
 
-## Features
+# Features
 
 - Simulates light ray trajectories in Schwarzschild geometry
 - Visualizes multiple light rays with different initial positions
@@ -10,16 +10,16 @@ This Python simulation visualizes the behavior of light rays around a black hole
 - Uses proper relativistic calculations for null geodesics
 - Includes numerical stability improvements for accurate simulation
 
-## Requirements
+# Requirements
 
 - Python 3.x
 - NumPy
 - Matplotlib
 - SciPy
 
-## Math
+# Theory
 
-# Schwarzschild Metric
+## Schwarzschild Metric
 The Schwarzschild metric describes the geometry of spacetime around a non-rotating, chargeless, and spherically symmetric mass:
 
 ```math
@@ -29,7 +29,7 @@ The Schwarzschild metric describes the geometry of spacetime around a non-rotati
 where $r_s = \frac{2GM}{c^2}$ is the Schwarzschild radius which defines the event horizon of a black hole, $M$ is the mass of the black hole, $G$ is tvitational constant, and $c$ is the speed of light.
 In the simulation, normalized units $G = c = 1$ are used, so the Schwarzschild radius becomes $r_s = 2M$.
 
-# Geodesic Equations
+## Geodesic Equations
 Light rays follow null geodesics, which are paths where the spacetime interval is zero ($ds^2 = 0$). 
 For motion in the equatorial plane ($\theta = \pi/2$), the geodesic equations reduce to:
 
@@ -51,7 +51,7 @@ For motion in the equatorial plane ($\theta = \pi/2$), the geodesic equations re
 
 where $f(r) = 1 - \frac{r_s}{r}$, $p_r$ is the radial momentum component, and $L$ is the angular momentum (conserved).
 
-# Effective Potential
+## Effective Potential
 The motion of light rays can be understood through an effective potential:
 
 ```math
@@ -60,12 +60,12 @@ V_{eff}(r) = \frac{L^2}{2r^2}\left(1 - \frac{r_s}{r}\right)
 
 The closest approach of a light ray to the black hole is determined by the impact parameter $b = \frac{L}{E}$, where $E$ is the energy of the photon.
 
-# Critical Radius
+## Critical Radius
 The photon sphere occurs at $r = \frac{3r_s}{2}$, where light rays can orbit the black hole in unstable circular orbits.
 Light rays with impact parameters less than the critical value $b_{crit} = \frac{3\sqrt{3}r_s}{2}$ will be captured by the black hole.
             
 
-## Installation
+# Installation
 
 1. Clone this repository:
 ```bash
@@ -77,7 +77,7 @@ git clone https://github.com/ZZBaron/2D-Black-Hole-Sim.git
 pip install -r requirements.txt
 ```
 
-## Usage
+# Usage
 
 Run the simulation by executing:
 ```bash
@@ -85,6 +85,6 @@ python "2D Black Hole Light Sim.py"
 ```
 
 
-## License
+# License
 
 MIT License
