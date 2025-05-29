@@ -24,7 +24,7 @@ The Schwarzschild metric describes the geometry of spacetime around a non-rotati
 
 ```math
  ds^2 = -\left(1-\frac{r_s}{r}\right)c^2dt^2 + \left(1-\frac{r_s}{r}\right)^{-1}dr^2 + r^2d\Omega^2 
- '''
+```
 
 where $r_s = \frac{2GM}{c^2}$ is the Schwarzschild radius which defines the event horizon of a black hole, $M$ is the mass of the black hole, $G$ is tvitational constant, and $c$ is the speed of light.
 In the simulation, normalized units $G = c = 1$ are used, so the Schwarzschild radius becomes $r_s = 2M$.
@@ -33,30 +33,31 @@ In the simulation, normalized units $G = c = 1$ are used, so the Schwarzschild r
 Light rays follow null geodesics, which are paths where the spacetime interval is zero ($ds^2 = 0$). 
 For motion in the equatorial plane ($\theta = \pi/2$), the geodesic equations reduce to:
 
-'''math
+```math
  \frac{dr}{d\lambda} = f(r) \cdot p_r 
- '''
+ ```
 
-'''math
+```math
  \frac{d\phi}{d\lambda} = \frac{L}{r^2} 
- '''
+```
 
- '''math
+```math
 \frac{dp_r}{d\lambda} = \frac{L^2}{r^3}f(r) - \frac{r_s}{2r^2}f(r) 
-'''
+```
 
-'''math
+```math
 \frac{dL}{d\lambda} = 0 
-'''
+```
 
 where $f(r) = 1 - \frac{r_s}{r}$, $p_r$ is the radial momentum component, and $L$ is the angular momentum (conserved).
 
 # Effective Potential
 The motion of light rays can be understood through an effective potential:
 
-'''math
+```math
 V_{eff}(r) = \frac{L^2}{2r^2}\left(1 - \frac{r_s}{r}\right) 
-'''
+```
+
 The closest approach of a light ray to the black hole is determined by the impact parameter $b = \frac{L}{E}$, where $E$ is the energy of the photon.
 
 # Critical Radius
