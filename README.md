@@ -19,9 +19,9 @@ Python simulation visualizing the behavior of light rays around a black hole in 
 - SciPy
 
 ## Linux
-'''bash
+```bash
 sudo apt install python3-tk
-'''
+```
 
 Also, if using system-wide python, make sure to use pip3 to install packages and python3 to run the script.
 
