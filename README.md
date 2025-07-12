@@ -70,7 +70,7 @@ The closest approach of a light ray to the black hole is determined by the impac
 
 ## Critical Radius
 The photon sphere occurs at $r = \frac{3}{2} r_s $, where light rays can orbit the black hole in unstable circular orbits.
-Light rays with impact parameters less than the critical value $b_{\text{crit}} = \frac{3 \sqrt{3}}{2} r_s $ will be captured by the black hole.
+Light rays with impact parameters less than the critical value $b_{\text{crit}} = \frac{3\sqrt{3}}{2}r_s$ will be captured by the black hole.
             
 
 # Installation
