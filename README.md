@@ -18,17 +18,23 @@ Python simulation visualizing the behavior of light rays around a black hole in 
 - Matplotlib
 - SciPy
 
+## Windows
+You can use winget to easily install python and pip.
+```cmd
+winget install Python.Python.3
+```
+
 
 ## Linux
 Python backend tkinter may need to be installed on some systems.
 
 ### Debian/Ubuntu based:
 ```bash
-sudo apt install python3-tk
+sudo apt install python3-tk python3-pip
 ```
 ### Fedora:
 ```bash
-sudo dnf install python3-tkinter
+sudo dnf install python3-tkinter python3-pip
 ```
 
 If using system-wide python, make sure to use pip3 to install packages and python3 to create the virtual environment or run the script.
