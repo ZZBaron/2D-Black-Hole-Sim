@@ -89,13 +89,13 @@ Light rays with impact parameters less than the critical value $b_{\text{crit}} 
 
 # Installation
 
-1. Clone this repository:
+## 1. Clone this repository:
 ```bash
 git clone https://github.com/ZZBaron/2D-Black-Hole-Sim.git
 cd 2D-Black-Hole-Sim
 ```
 
-2. Create a python virtual environment (Optional)
+## 2. Create a python virtual environment (Optional)
 ### Windows
 ```cmd
 # Replace `env` with your desired environment name
@@ -110,7 +110,7 @@ source env/bin/activate
 ```
 
 
-3. Install the required packages:
+## 3. Install the required packages:
 ```bash
 pip install -r requirements.txt
 ```
