@@ -18,12 +18,20 @@ Python simulation visualizing the behavior of light rays around a black hole in 
 - Matplotlib
 - SciPy
 
+
 ## Linux
+Python backend tkinter may need to be installed on some systems.
+
+### Debian/Ubuntu based:
 ```bash
 sudo apt install python3-tk
 ```
+### Fedora:
+```bash
+sudo dnf install python3-tkinter
+```
 
-Also, if using system-wide python, make sure to use pip3 to install packages and python3 to run the script.
+If using system-wide python, make sure to use pip3 to install packages and python3 to create the virtual environment or run the script.
 
 # Theory
 
@@ -78,9 +86,25 @@ Light rays with impact parameters less than the critical value $b_{\text{crit}} 
 1. Clone this repository:
 ```bash
 git clone https://github.com/ZZBaron/2D-Black-Hole-Sim.git
+cd 2D-Black-Hole-Sim
 ```
 
-2. Install the required packages:
+2. Create a python virtual environment (Optional)
+### Windows
+```cmd
+# Replace `env` with your desired environment name
+python -m venv env
+env\Scripts\activate
+```
+
+### Linux/macOS
+```bash
+python3 -m venv env
+source env/bin/activate
+```
+
+
+3. Install the required packages:
 ```bash
 pip install -r requirements.txt
 ```
