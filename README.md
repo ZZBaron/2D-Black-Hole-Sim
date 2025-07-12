@@ -63,14 +63,14 @@ where $f(r) = 1 - \frac{r_s}{r}$, $p_r$ is the radial momentum component, and $L
 The motion of light rays can be understood through an effective potential:
 
 ```math
-V_{eff}(r) = \frac{L^2}{2r^2}\left(1 - \frac{r_s}{r}\right) 
+V_{\text{eff}}(r) = \frac{L^2}{2r^2}\left(1 - \frac{r_s}{r}\right) 
 ```
 
 The closest approach of a light ray to the black hole is determined by the impact parameter $b = \frac{L}{E}$, where $E$ is the energy of the photon.
 
 ## Critical Radius
 The photon sphere occurs at $r = \frac{3}{2} r_s $, where light rays can orbit the black hole in unstable circular orbits.
-Light rays with impact parameters less than the critical value $b_{crit} = \frac{3\sqrt{3}}{2} r_s $ will be captured by the black hole.
+Light rays with impact parameters less than the critical value $b_{\text{crit}} = \frac{3 \sqrt{3}}{2} r_s $ will be captured by the black hole.
             
 
 # Installation
