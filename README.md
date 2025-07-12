@@ -1,6 +1,6 @@
 # 2D Black Hole Light Ray Simulation
 
-This Python simulation visualizes the behavior of light rays around a black hole in 2D space using the Schwarzschild metric. The user can observe gravitational lensing effects in response to a strong gravitational field.
+Python simulation visualizing the behavior of light rays around a black hole in 2D space using the Schwarzschild metric. The user can observe gravitational lensing effects in response to a strong gravitational field. 
 
 # Features
 
@@ -13,9 +13,17 @@ This Python simulation visualizes the behavior of light rays around a black hole
 # Requirements
 
 - Python 3.x
+- Pip for Python 3
 - NumPy
 - Matplotlib
 - SciPy
+
+## Linux
+'''bash
+sudo apt install python3-tk
+'''
+
+Also, if using system-wide python, make sure to use pip3 to install packages and python3 to run the script.
 
 # Theory
 
@@ -26,7 +34,7 @@ The Schwarzschild metric describes the geometry of spacetime around a non-rotati
  ds^2 = -\left(1-\frac{r_s}{r}\right)c^2dt^2 + \left(1-\frac{r_s}{r}\right)^{-1}dr^2 + r^2d\Omega^2 
 ```
 
-where $r_s = \frac{2GM}{c^2}$ is the Schwarzschild radius which defines the event horizon of a black hole, $M$ is the mass of the black hole, $G$ is tvitational constant, and $c$ is the speed of light.
+where $r_s = \frac{2GM}{c^2}$ is the Schwarzschild radius which defines the event horizon of a black hole, $M$ is the mass of the black hole, $G$ is Newton's gravitational constant, and $c$ is the speed of light.
 In the simulation, normalized units $G = c = 1$ are used, so the Schwarzschild radius becomes $r_s = 2M$.
 
 ## Geodesic Equations
