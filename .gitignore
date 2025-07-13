@@ -39,3 +39,6 @@ ENV/
 .Trashes
 ehthumbs.db
 Thumbs.db
+
+#animation
+blackhole_animation.gif
