@@ -205,8 +205,26 @@ class BlackHoleAnimation:
 
     def set_mode(self, label):
         """Set the light generation mode"""
-        self.light_mode = label
-        # Don't auto-generate rays
+        self.light_mode = label.lower()  # Convert to lowercase to match internal format
+
+        # Clear existing rays when switching modes
+        for line in getattr(self, 'lines', []):
+            line.remove()
+
+        self.lines = []
+        self.ray_data = []
+
+        # Remove source point if it exists
+        if hasattr(self, 'source_point'):
+            self.source_point.remove()
+            del self.source_point
+
+        # Stop animation if running
+        if self.is_animating:
+            self.stop_animation()
+
+        # Redraw the canvas
+        self.fig.canvas.draw()
 
     def update_source_x(self, val):
         self.source_x = val
@@ -397,9 +415,29 @@ class BlackHoleAnimation:
         return self.lines
 
     def reset_view(self, event):
-        """Reset view to default"""
+        """Reset view to default and clear all light ray paths"""
+        # Clear existing rays
+        for line in getattr(self, 'lines', []):
+            line.remove()
+
+        # Clear the lines list
+        self.lines = []
+        self.ray_data = []
+
+        # Remove source point if it exists
+        if hasattr(self, 'source_point'):
+            self.source_point.remove()
+            del self.source_point
+
+        # Stop animation if running
+        if self.is_animating:
+            self.stop_animation()
+
+        # Reset view limits
         self.ax.set_xlim(-20, 20)
         self.ax.set_ylim(-20, 20)
+
+        # Redraw the canvas
         self.fig.canvas.draw()
 
     def regenerate_rays(self, event):
