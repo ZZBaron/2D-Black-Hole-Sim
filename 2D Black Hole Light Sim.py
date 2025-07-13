@@ -141,7 +141,7 @@ class BlackHoleAnimation:
 
         # Mode selection
         mode_ax = plt.axes([0.77, 0.85, 0.15, 0.1])
-        self.mode_radio = RadioButtons(mode_ax, ('source', 'directional'))
+        self.mode_radio = RadioButtons(mode_ax, ('Source', 'Directional'))
         self.mode_radio.on_clicked(self.set_mode)
 
         # Source position sliders
@@ -384,8 +384,6 @@ class BlackHoleAnimation:
         if hasattr(self, 'anim'):
             self.anim.event_source.stop()
 
-        # Redraw all rays
-        self.generate_rays()
 
     def animate_frame(self, frame):
         """Animation frame function"""
@@ -424,7 +422,7 @@ class BlackHoleAnimation:
         root.withdraw()  # Hide the main window
         result = messagebox.askyesno(
             "Save Animation Warning",
-            "Warning: Saving the animation may take several minutes and will use significant disk space. "
+            "Warning: Saving the animation may take a minute. "
             "The program may appear frozen during this process. Continue?"
         )
         root.destroy()
