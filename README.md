@@ -20,10 +20,12 @@ Python simulation visualizing the behavior of light rays around a black hole in 
 
 ## Windows
 You can use winget to easily install python and pip.
-```cmd
-winget install Python.Python.3
+```powershell
+# install python (user install)
+winget install -e --id Python.Python.3.13
+# install git
+winget install --id Git.Git -e --source winget
 ```
-
 
 ## Linux
 Python backend tkinter may need to be installed on some systems.
